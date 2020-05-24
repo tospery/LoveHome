@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TextImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWz-HP-22m">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPic" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-PA-pem">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OVh-PA-pem" secondAttribute="height" multiplier="1:1" id="cgT-k3-bC2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cgT-k3-bC2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cgT-k3-bC2"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tWz-HP-22m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="YtY-GR-9aK">
+                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="OVh-PA-pem" secondAttribute="bottom" constant="5" id="bEg-Ob-jxl"/>
+                    <constraint firstAttribute="trailing" secondItem="OVh-PA-pem" secondAttribute="trailing" constant="12" id="jlM-Dy-Do8"/>
+                    <constraint firstItem="OVh-PA-pem" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="kej-ea-XF6"/>
+                    <constraint firstAttribute="centerY" secondItem="tWz-HP-22m" secondAttribute="centerY" id="nKO-Ox-tlf"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="tWz-HP-22m"/>
+                        <exclude reference="OVh-PA-pem"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="YtY-GR-9aK"/>
+                        <exclude reference="nKO-Ox-tlf"/>
+                        <exclude reference="bEg-Ob-jxl"/>
+                        <exclude reference="jlM-Dy-Do8"/>
+                        <exclude reference="kej-ea-XF6"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="tWz-HP-22m"/>
+                        <include reference="OVh-PA-pem"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="YtY-GR-9aK"/>
+                        <include reference="nKO-Ox-tlf"/>
+                        <include reference="bEg-Ob-jxl"/>
+                        <include reference="jlM-Dy-Do8"/>
+                        <include reference="kej-ea-XF6"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLable" destination="tWz-HP-22m" id="Rog-hj-9HW"/>
+                <outlet property="headImageView" destination="OVh-PA-pem" id="Ybc-1H-u1n"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="userPic" width="40" height="40"/>
+    </resources>
+</document>

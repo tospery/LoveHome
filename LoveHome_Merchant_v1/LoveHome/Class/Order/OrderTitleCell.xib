@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="OrderTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dp" translatesAutoresizingMaskIntoConstraints="NO" id="Msa-bT-Ygo">
+                        <rect key="frame" x="8" y="16" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="LPE-6n-cG1"/>
+                            <constraint firstAttribute="height" constant="13" id="wn6-nN-jqn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="布兰奇商家" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-AF-pM6">
+                        <rect key="frame" x="29" y="12" width="112" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="112" id="0f6-Wt-LWL"/>
+                            <constraint firstAttribute="height" constant="21" id="pgV-eb-lZ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_item_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-xR-mtB">
+                        <rect key="frame" x="148" y="18" width="7" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="HaC-6J-ZQM"/>
+                            <constraint firstAttribute="width" constant="7" id="Rro-XG-4Ep"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfr-8m-m7p" userLabel="跳转button">
+                        <rect key="frame" x="8" y="8" width="140" height="28.5"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="presentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xM6-6w-AXC"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O3R-xR-mtB" firstAttribute="leading" secondItem="Pfr-8m-m7p" secondAttribute="trailing" id="Dhf-Wk-Icm"/>
+                    <constraint firstItem="Pfr-8m-m7p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="IaE-ny-bte"/>
+                    <constraint firstItem="O3R-xR-mtB" firstAttribute="leading" secondItem="1fT-AF-pM6" secondAttribute="trailing" constant="7" id="LoA-vL-fM7"/>
+                    <constraint firstItem="Msa-bT-Ygo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mbd-7d-dWn"/>
+                    <constraint firstItem="1fT-AF-pM6" firstAttribute="leading" secondItem="Msa-bT-Ygo" secondAttribute="trailing" constant="8" id="NrB-qe-ACy"/>
+                    <constraint firstItem="Pfr-8m-m7p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XwF-rE-czN"/>
+                    <constraint firstAttribute="centerY" secondItem="1fT-AF-pM6" secondAttribute="centerY" id="gud-24-fQR"/>
+                    <constraint firstAttribute="centerY" secondItem="O3R-xR-mtB" secondAttribute="centerY" id="iRd-OG-dIr"/>
+                    <constraint firstAttribute="centerY" secondItem="Msa-bT-Ygo" secondAttribute="centerY" id="kL4-3H-SD1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pfr-8m-m7p" secondAttribute="bottom" id="oXI-Im-U3F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shopName" destination="1fT-AF-pM6" id="xa8-cU-q8a"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="254.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dp" width="16" height="16"/>
+        <image name="list_item_arrow" width="7" height="13"/>
+    </resources>
+</document>

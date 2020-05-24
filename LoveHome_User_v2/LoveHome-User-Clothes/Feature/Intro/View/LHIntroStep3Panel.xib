@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LHIntroStep3Panel">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_intro03" translatesAutoresizingMaskIntoConstraints="NO" id="pDP-p5-yT8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Ed-VjJ">
+                    <rect key="frame" x="284" y="0.0" width="36" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EFa-Ed-VjJ" secondAttribute="height" multiplier="139:122" id="rgC-sR-xJI"/>
+                    </constraints>
+                    <state key="normal" image="ic_intro_close"/>
+                    <connections>
+                        <action selector="entryButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="KeK-jm-bgQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EFa-Ed-VjJ" secondAttribute="trailing" id="3Rt-eo-KxN"/>
+                <constraint firstAttribute="bottom" secondItem="pDP-p5-yT8" secondAttribute="bottom" id="3xx-fI-t9u"/>
+                <constraint firstItem="pDP-p5-yT8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PTR-sk-Mfd"/>
+                <constraint firstAttribute="trailing" secondItem="pDP-p5-yT8" secondAttribute="trailing" id="dEX-I7-0NC"/>
+                <constraint firstItem="EFa-Ed-VjJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eDY-2U-8CF"/>
+                <constraint firstItem="EFa-Ed-VjJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="36:320" id="mcS-ao-eMj"/>
+                <constraint firstItem="pDP-p5-yT8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u8v-JR-yF8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="213" y="312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_intro03" width="640" height="960"/>
+        <image name="ic_intro_close" width="139" height="122"/>
+    </resources>
+</document>

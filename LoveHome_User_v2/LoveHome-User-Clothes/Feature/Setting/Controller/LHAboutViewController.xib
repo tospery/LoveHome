@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHAboutViewController">
+            <connections>
+                <outlet property="versionLabel" destination="QAY-Ih-e7I" id="Cvs-Ma-TsF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_appicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3f-EG-y1b">
+                    <rect key="frame" x="120" y="132" width="80" height="80"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="k3f-EG-y1b" secondAttribute="height" multiplier="1:1" id="nGu-fl-ZRf"/>
+                        <constraint firstAttribute="width" constant="80" id="rEJ-P5-FcE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱为家•洗衣" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxL-Zn-AWU">
+                    <rect key="frame" x="113" y="220" width="93.5" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="C4t-IG-7bH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAY-Ih-e7I">
+                    <rect key="frame" x="130" y="249" width="60" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.appvworks.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePT-ue-kA0">
+                    <rect key="frame" x="72" y="466" width="176.5" height="18"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Wax-So-ZQK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四川艾维科思科技有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6g-ka-0LT">
+                    <rect key="frame" x="70" y="444" width="180" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QAY-Ih-e7I" firstAttribute="top" secondItem="VxL-Zn-AWU" secondAttribute="bottom" constant="8" id="6zc-q9-Fze"/>
+                <constraint firstAttribute="centerY" secondItem="k3f-EG-y1b" secondAttribute="centerY" constant="80" id="IYW-1o-68b"/>
+                <constraint firstItem="VxL-Zn-AWU" firstAttribute="top" secondItem="k3f-EG-y1b" secondAttribute="bottom" constant="8" id="M3c-bj-dii"/>
+                <constraint firstAttribute="centerX" secondItem="VxL-Zn-AWU" secondAttribute="centerX" id="QgK-hg-OSk"/>
+                <constraint firstAttribute="centerX" secondItem="k3f-EG-y1b" secondAttribute="centerX" id="UoV-cl-1GB"/>
+                <constraint firstAttribute="bottom" secondItem="ePT-ue-kA0" secondAttribute="bottom" constant="20" id="f2k-pX-HM6"/>
+                <constraint firstAttribute="centerX" secondItem="l6g-ka-0LT" secondAttribute="centerX" id="fPO-or-rgh"/>
+                <constraint firstItem="ePT-ue-kA0" firstAttribute="top" secondItem="l6g-ka-0LT" secondAttribute="bottom" constant="4" id="twb-y3-Ytw"/>
+                <constraint firstAttribute="centerX" secondItem="QAY-Ih-e7I" secondAttribute="centerX" id="wGR-uc-O5U"/>
+                <constraint firstAttribute="centerX" secondItem="ePT-ue-kA0" secondAttribute="centerX" id="yF4-UR-n16"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="376" y="299"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my_appicon.png" width="80" height="80"/>
+    </resources>
+</document>

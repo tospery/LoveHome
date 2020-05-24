@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="MoreItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-Sm-uNw">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lw-XE-i1Q">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="UA7-lI-YjA"/>
+                            <constraint firstAttribute="height" constant="30" id="Vzs-7g-M2j"/>
+                        </constraints>
+                        <state key="normal" image="Unchecked">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="check_select"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UA7-lI-YjA"/>
+                                <exclude reference="Vzs-7g-M2j"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="UA7-lI-YjA"/>
+                                <include reference="Vzs-7g-M2j"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="selectButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZfL-8R-FPP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8lw-XE-i1Q" secondAttribute="trailing" constant="8" id="CRO-IV-o21"/>
+                    <constraint firstAttribute="centerY" secondItem="8lw-XE-i1Q" secondAttribute="centerY" id="EzN-oK-61e"/>
+                    <constraint firstItem="Qsh-Sm-uNw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SZM-k9-SHf"/>
+                    <constraint firstAttribute="centerY" secondItem="Qsh-Sm-uNw" secondAttribute="centerY" id="bqw-RX-esb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Qsh-Sm-uNw"/>
+                        <exclude reference="8lw-XE-i1Q"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="SZM-k9-SHf"/>
+                        <exclude reference="bqw-RX-esb"/>
+                        <exclude reference="CRO-IV-o21"/>
+                        <exclude reference="EzN-oK-61e"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="Qsh-Sm-uNw"/>
+                        <include reference="8lw-XE-i1Q"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="SZM-k9-SHf"/>
+                        <include reference="bqw-RX-esb"/>
+                        <include reference="CRO-IV-o21"/>
+                        <include reference="EzN-oK-61e"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectButton" destination="8lw-XE-i1Q" id="EdC-nS-HpK"/>
+                <outlet property="textName" destination="Qsh-Sm-uNw" id="EGF-2Q-AcX"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="204.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Unchecked" width="22" height="22"/>
+        <image name="check_select" width="44" height="44"/>
+    </resources>
+</document>

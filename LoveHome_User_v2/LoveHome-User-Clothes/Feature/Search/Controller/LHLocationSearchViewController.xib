@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHLocationSearchViewController">
+            <connections>
+                <outlet property="keywordTextField" destination="h2z-RC-nud" id="dvH-EX-aiy"/>
+                <outlet property="resultTableView" destination="AHS-m1-cWa" id="FfZ-oq-f1Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOp-QV-Hap">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUD-NS-Oac">
+                            <rect key="frame" x="12" y="8" width="296" height="37"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="iZc-J9-3Ij">
+                                    <rect key="frame" x="8" y="11" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="14" id="1JK-EN-rWQ"/>
+                                        <constraint firstAttribute="width" secondItem="iZc-J9-3Ij" secondAttribute="height" multiplier="1:1" id="T9P-sW-bvo"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索写字楼、小区、学校" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-RC-nud">
+                                    <rect key="frame" x="30" y="0.0" width="266" height="37"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="searchEdited:" destination="-1" eventType="editingChanged" id="8PV-fA-cJS"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="iZc-J9-3Ij" firstAttribute="centerY" secondItem="qUD-NS-Oac" secondAttribute="centerY" id="3aP-KR-Q8v"/>
+                                <constraint firstItem="iZc-J9-3Ij" firstAttribute="leading" secondItem="qUD-NS-Oac" secondAttribute="leading" constant="8" id="GJ3-od-fm0"/>
+                                <constraint firstAttribute="trailing" secondItem="h2z-RC-nud" secondAttribute="trailing" id="Khh-vD-IM9"/>
+                                <constraint firstItem="h2z-RC-nud" firstAttribute="top" secondItem="qUD-NS-Oac" secondAttribute="top" id="Txh-TB-4ts"/>
+                                <constraint firstItem="h2z-RC-nud" firstAttribute="leading" secondItem="iZc-J9-3Ij" secondAttribute="trailing" constant="8" id="Zj1-6M-YaR"/>
+                                <constraint firstAttribute="bottom" secondItem="h2z-RC-nud" secondAttribute="bottom" id="m3b-kP-Pz7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qUD-NS-Oac" firstAttribute="centerY" secondItem="KOp-QV-Hap" secondAttribute="centerY" id="KEp-50-qZ1"/>
+                        <constraint firstItem="qUD-NS-Oac" firstAttribute="centerX" secondItem="KOp-QV-Hap" secondAttribute="centerX" id="T4k-Ea-9sJ"/>
+                        <constraint firstItem="qUD-NS-Oac" firstAttribute="height" secondItem="KOp-QV-Hap" secondAttribute="height" multiplier="34:50" id="TMU-MM-HyQ"/>
+                        <constraint firstItem="qUD-NS-Oac" firstAttribute="width" secondItem="KOp-QV-Hap" secondAttribute="width" multiplier="296:320" id="ZzA-Ke-Wjs"/>
+                        <constraint firstAttribute="width" secondItem="KOp-QV-Hap" secondAttribute="height" multiplier="160:27" id="uDJ-do-cfG"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHS-m1-cWa">
+                    <rect key="frame" x="0.0" y="54" width="320" height="450"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DrF-wo-sp7"/>
+                        <outlet property="delegate" destination="-1" id="Rrk-T9-adY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KOp-QV-Hap" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5C6-9U-icc"/>
+                <constraint firstItem="AHS-m1-cWa" firstAttribute="top" secondItem="KOp-QV-Hap" secondAttribute="bottom" id="Bfu-FH-Tbs"/>
+                <constraint firstItem="KOp-QV-Hap" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ICx-3E-Vjr"/>
+                <constraint firstAttribute="trailing" secondItem="AHS-m1-cWa" secondAttribute="trailing" id="Msb-LR-sfD"/>
+                <constraint firstAttribute="trailing" secondItem="KOp-QV-Hap" secondAttribute="trailing" id="hfB-Yr-DdW"/>
+                <constraint firstItem="AHS-m1-cWa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nCV-wf-tm0"/>
+                <constraint firstAttribute="bottom" secondItem="AHS-m1-cWa" secondAttribute="bottom" id="vbY-hL-sfB"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="369" y="311"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_search" width="16" height="16"/>
+    </resources>
+</document>

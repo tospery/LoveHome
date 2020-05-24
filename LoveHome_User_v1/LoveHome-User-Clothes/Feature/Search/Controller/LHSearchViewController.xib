@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHSearchViewController">
+            <connections>
+                <outlet property="contentView" destination="hdc-0h-Jep" id="Szj-Ed-hae"/>
+                <outlet property="tableView" destination="YL8-kC-dNb" id="IRi-Xf-RM1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-Fz-tyY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-0h-Jep">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-kC-dNb">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="25o-wT-UlD"/>
+                                        <outlet property="delegate" destination="-1" id="Vf8-wk-eM7"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="YL8-kC-dNb" secondAttribute="trailing" id="6JQ-MX-nXp"/>
+                                <constraint firstAttribute="bottom" secondItem="YL8-kC-dNb" secondAttribute="bottom" id="EuN-wc-W8z"/>
+                                <constraint firstItem="YL8-kC-dNb" firstAttribute="top" secondItem="hdc-0h-Jep" secondAttribute="top" id="ecw-hI-I1k"/>
+                                <constraint firstItem="YL8-kC-dNb" firstAttribute="leading" secondItem="hdc-0h-Jep" secondAttribute="leading" id="geW-Lp-9RM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="hdc-0h-Jep" firstAttribute="height" secondItem="nSj-Fz-tyY" secondAttribute="height" id="0Bb-Jr-Okf"/>
+                        <constraint firstAttribute="bottom" secondItem="hdc-0h-Jep" secondAttribute="bottom" id="Bws-hC-ZK0"/>
+                        <constraint firstAttribute="trailing" secondItem="hdc-0h-Jep" secondAttribute="trailing" id="OfL-zH-dDA"/>
+                        <constraint firstItem="hdc-0h-Jep" firstAttribute="leading" secondItem="nSj-Fz-tyY" secondAttribute="leading" id="gn6-Nv-w5w"/>
+                        <constraint firstItem="hdc-0h-Jep" firstAttribute="top" secondItem="nSj-Fz-tyY" secondAttribute="top" id="gyD-UO-5Lo"/>
+                        <constraint firstItem="hdc-0h-Jep" firstAttribute="width" secondItem="nSj-Fz-tyY" secondAttribute="width" id="sq3-h5-SR1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nSj-Fz-tyY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7wx-IS-NEB"/>
+                <constraint firstAttribute="bottom" secondItem="nSj-Fz-tyY" secondAttribute="bottom" id="BZN-Se-Skw"/>
+                <constraint firstAttribute="trailing" secondItem="nSj-Fz-tyY" secondAttribute="trailing" id="Ssh-yf-lN3"/>
+                <constraint firstItem="nSj-Fz-tyY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pUI-Is-GzA"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="362" y="315"/>
+        </view>
+    </objects>
+</document>

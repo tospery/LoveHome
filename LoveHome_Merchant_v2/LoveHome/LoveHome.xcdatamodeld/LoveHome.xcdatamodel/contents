@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="CategoryDataEntity" representedClassName="CategoryDataEntity" syncable="YES">
+        <attribute name="parentid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ptypeid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ptypename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyshopItemsEntity" representedClassName="MyshopItemsEntity" syncable="YES">
+        <attribute name="ptypeid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="ptypename" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CategoryDataEntity" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="MyshopItemsEntity" positionX="-36" positionY="36" width="128" height="75"/>
+    </elements>
+</model>

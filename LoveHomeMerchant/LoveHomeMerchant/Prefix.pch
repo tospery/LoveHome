@@ -1,0 +1,67 @@
+//
+//  Prefix.pch
+//  LoveHomeMerchant
+//
+//  Created by 杨建祥 on 16/3/16.
+//  Copyright © 2016年 iOSTeam. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
+/**********************************************************************
+ Pod管理的第三方库
+ *********************************************************************/
+#import <Masonry/Masonry.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
+#import <MJRefresh/MJRefresh.h>
+#import <IQKeyboardManager/KeyboardManager.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <pop/POP.h>
+#import <MJExtension/MJExtension.h>
+#import <VBFPopFlatButton/VBFPopFlatButton.h>
+#import <VBFPopFlatButton/VBFDoubleSegment.h>
+#import <SDWebImage/SDImageCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <JSPatch/JPEngine.h>
+#import <Bugtags/Bugtags.h>
+#import <NJKWebViewProgress/NJKWebViewProgress.h>
+#import <NJKWebViewProgress/NJKWebViewProgressView.h>
+#import <WebViewJavascriptBridge/WebViewJavascriptBridge.h>
+#import <Reachability/Reachability.h>
+
+///**********************************************************************
+// 手动管理的源码库
+// *********************************************************************/
+#import "JXObjc.h"
+
+///**********************************************************************
+// 通用组件
+// *********************************************************************/
+#import "Const.h"
+#import "Util.h"
+#import "Type.h"
+#import "Tool.h"
+#import "User.h"
+#import "HTTPRequestSchema.h"
+#import "HTTPRequestParam.h"
+#import "JXViewModelServices.h"
+#import "AppDelegate.h"
+#import "MemoryCache.h"
+
+
+
+#endif
+

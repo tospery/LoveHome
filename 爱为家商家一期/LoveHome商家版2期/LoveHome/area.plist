@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>cities</key>
+		<array>
+			<dict>
+				<key>areas</key>
+				<array>
+					<string>成华区</string>
+					<string>龙泉驿区</string>
+					<string>金牛区</string>
+					<string>武侯区</string>
+					<string>锦江区</string>
+					<string>青羊区</string>
+					<string>高新区</string>
+					<string>都江堰市</string>
+					<string>温江区</string>
+					<string>邛崃市</string>
+					<string>彭州市</string>
+					<string>新津县</string>
+					<string>郫县</string>
+					<string>青白江区</string>
+					<string>新都区</string>
+					<string>双流县</string>
+					<string>大邑县</string>
+					<string>崇州市</string>
+					<string>蒲江县</string>
+					<string>金堂县</string>
+				</array>
+				<key>city</key>
+				<string>成都</string>
+			</dict>
+		</array>
+		<key>state</key>
+		<string>四川</string>
+	</dict>
+</array>
+</plist>

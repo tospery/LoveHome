@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LHHomeSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6O-KM-3rb">
+                    <rect key="frame" x="8" y="9" width="164" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入店铺名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PG-xv-dsT">
+                            <rect key="frame" x="47" y="4" width="70" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="qdJ-jB-xbe">
+                            <rect key="frame" x="29" y="6" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qdJ-jB-xbe" secondAttribute="height" multiplier="1:1" id="Dmc-vM-GuK"/>
+                                <constraint firstAttribute="width" constant="14" id="NSB-mb-P5C"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="1PG-xv-dsT" secondAttribute="centerY" id="bdH-Zx-lfI"/>
+                        <constraint firstAttribute="centerX" secondItem="1PG-xv-dsT" secondAttribute="centerX" id="fHr-rV-4L9"/>
+                        <constraint firstItem="1PG-xv-dsT" firstAttribute="centerY" secondItem="qdJ-jB-xbe" secondAttribute="centerY" id="hkZ-mL-jHW"/>
+                        <constraint firstItem="1PG-xv-dsT" firstAttribute="leading" secondItem="qdJ-jB-xbe" secondAttribute="trailing" constant="4" id="zxX-mg-cHr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GX-5f-IVo">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="44"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="DkT-8r-Nyp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6GX-5f-IVo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1EN-4d-RcB"/>
+                <constraint firstItem="U6O-KM-3rb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="HgM-FI-Zm7"/>
+                <constraint firstItem="6GX-5f-IVo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K4Y-Fh-dd3"/>
+                <constraint firstAttribute="trailing" secondItem="6GX-5f-IVo" secondAttribute="trailing" id="LXA-Mb-n40"/>
+                <constraint firstAttribute="bottom" secondItem="6GX-5f-IVo" secondAttribute="bottom" id="Wmm-Dx-9Qy"/>
+                <constraint firstAttribute="trailing" secondItem="U6O-KM-3rb" secondAttribute="trailing" constant="8" id="vgd-De-Uj5"/>
+                <constraint firstItem="U6O-KM-3rb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="ytZ-wk-ysp"/>
+                <constraint firstAttribute="bottom" secondItem="U6O-KM-3rb" secondAttribute="bottom" constant="9" id="zYl-rt-1PD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="U6O-KM-3rb" id="oEr-pS-var"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="237"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_search" width="12" height="12"/>
+    </resources>
+</document>

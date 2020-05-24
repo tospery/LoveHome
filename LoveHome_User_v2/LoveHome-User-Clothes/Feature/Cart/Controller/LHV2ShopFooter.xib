@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Yvq-kZ-Qtc" customClass="LHV2ShopFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbt-ea-ylr">
+                    <rect key="frame" x="0.0" y="1" width="320" height="39"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共1件商品   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-jG-CcT">
+                            <rect key="frame" x="12" y="10.5" width="74" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS8-ut-nWQ">
+                            <rect key="frame" x="240" y="0.0" width="80" height="39"/>
+                            <color key="backgroundColor" red="0.22352941176470587" green="0.84705882352941175" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="8LP-2H-I1Z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="去结算"/>
+                            <connections>
+                                <action selector="funcButtonPressed:" destination="Yvq-kZ-Qtc" eventType="touchUpInside" id="Nfw-vL-WNV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zS8-ut-nWQ" secondAttribute="bottom" id="3DO-Ru-EB1"/>
+                        <constraint firstItem="BVI-jG-CcT" firstAttribute="centerY" secondItem="hbt-ea-ylr" secondAttribute="centerY" id="AT8-f3-sZz"/>
+                        <constraint firstAttribute="trailing" secondItem="zS8-ut-nWQ" secondAttribute="trailing" id="UEn-CQ-bKP"/>
+                        <constraint firstItem="BVI-jG-CcT" firstAttribute="leading" secondItem="hbt-ea-ylr" secondAttribute="leading" constant="12" id="l0f-1Z-HSr"/>
+                        <constraint firstItem="zS8-ut-nWQ" firstAttribute="top" secondItem="hbt-ea-ylr" secondAttribute="top" id="xHP-5b-0lM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMu-I7-7d9">
+                    <rect key="frame" x="0.0" y="40" width="320" height="12"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hbt-ea-ylr" firstAttribute="leading" secondItem="Yvq-kZ-Qtc" secondAttribute="leading" id="A8k-aN-l1l"/>
+                <constraint firstItem="kMu-I7-7d9" firstAttribute="leading" secondItem="Yvq-kZ-Qtc" secondAttribute="leading" id="HXD-Nf-Hwn"/>
+                <constraint firstAttribute="bottom" secondItem="hbt-ea-ylr" secondAttribute="bottom" constant="12" id="Jie-Yl-0XX"/>
+                <constraint firstItem="hbt-ea-ylr" firstAttribute="top" secondItem="Yvq-kZ-Qtc" secondAttribute="top" constant="1" id="aX3-U5-s0X"/>
+                <constraint firstAttribute="trailing" secondItem="hbt-ea-ylr" secondAttribute="trailing" id="aiP-1W-vou"/>
+                <constraint firstItem="kMu-I7-7d9" firstAttribute="top" secondItem="hbt-ea-ylr" secondAttribute="bottom" id="fgu-Ho-CpV"/>
+                <constraint firstAttribute="trailing" secondItem="kMu-I7-7d9" secondAttribute="trailing" id="pT1-XL-L9h"/>
+                <constraint firstAttribute="bottom" secondItem="kMu-I7-7d9" secondAttribute="bottom" id="xbP-cq-XFL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="funcButton" destination="zS8-ut-nWQ" id="oys-a8-cMo"/>
+                <outlet property="totalInfoLabel" destination="BVI-jG-CcT" id="otn-Ib-fNf"/>
+            </connections>
+            <point key="canvasLocation" x="227" y="206"/>
+        </view>
+    </objects>
+</document>

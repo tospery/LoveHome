@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerMapViewController">
+            <connections>
+                <outlet property="mapContentView" destination="xWd-wh-F0Q" id="MY6-64-Xcx"/>
+                <outlet property="mySearchBar" destination="TfU-V8-Huw" id="1LW-2U-N6K"/>
+                <outlet property="myTableView" destination="rX9-P7-dFu" id="Lhk-H2-lX5"/>
+                <outlet property="searchController" destination="vgx-Vl-m0g" id="kiB-ke-kFO"/>
+                <outlet property="searchDisplayController" destination="vgx-Vl-m0g" id="7GC-Y7-GmU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="TfU-V8-Huw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="NXc-AF-E09"/>
+                    </connections>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-wh-F0Q">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xWd-wh-F0Q" secondAttribute="height" multiplier="40:35" id="xV5-nx-qfs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xV5-nx-qfs"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="xV5-nx-qfs"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUM-qD-NSz">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-P7-dFu">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ums-g7-hQ4"/>
+                                <outlet property="delegate" destination="-1" id="B0S-4b-fD9"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BUM-qD-NSz" secondAttribute="height" multiplier="400:200" id="3Mb-UM-w8j"/>
+                        <constraint firstAttribute="trailing" secondItem="rX9-P7-dFu" secondAttribute="trailing" id="P3j-1z-Jsg"/>
+                        <constraint firstItem="rX9-P7-dFu" firstAttribute="top" secondItem="BUM-qD-NSz" secondAttribute="top" id="QQC-QA-bmQ"/>
+                        <constraint firstAttribute="bottom" secondItem="rX9-P7-dFu" secondAttribute="bottom" id="ekP-US-Utb"/>
+                        <constraint firstItem="rX9-P7-dFu" firstAttribute="leading" secondItem="BUM-qD-NSz" secondAttribute="leading" id="kLD-j5-jAm"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="rX9-P7-dFu"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="3Mb-UM-w8j"/>
+                            <exclude reference="P3j-1z-Jsg"/>
+                            <exclude reference="QQC-QA-bmQ"/>
+                            <exclude reference="ekP-US-Utb"/>
+                            <exclude reference="kLD-j5-jAm"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="rX9-P7-dFu"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="3Mb-UM-w8j"/>
+                            <include reference="P3j-1z-Jsg"/>
+                            <include reference="QQC-QA-bmQ"/>
+                            <include reference="ekP-US-Utb"/>
+                            <include reference="kLD-j5-jAm"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BUM-qD-NSz" secondAttribute="trailing" id="4Xp-7h-NK2"/>
+                <constraint firstItem="BUM-qD-NSz" firstAttribute="top" secondItem="xWd-wh-F0Q" secondAttribute="bottom" id="BX8-0N-Srj"/>
+                <constraint firstAttribute="trailing" secondItem="xWd-wh-F0Q" secondAttribute="trailing" id="BrB-Vd-fQm"/>
+                <constraint firstItem="BUM-qD-NSz" firstAttribute="top" secondItem="xWd-wh-F0Q" secondAttribute="bottom" id="JxA-a4-u9Z"/>
+                <constraint firstItem="TfU-V8-Huw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="2" id="MCs-Xa-wxV"/>
+                <constraint firstItem="xWd-wh-F0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mll-hq-wQn"/>
+                <constraint firstItem="TfU-V8-Huw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tdx-PU-a8x"/>
+                <constraint firstAttribute="trailing" secondItem="TfU-V8-Huw" secondAttribute="trailing" id="UXU-CU-ZIc"/>
+                <constraint firstItem="BUM-qD-NSz" firstAttribute="height" secondItem="xWd-wh-F0Q" secondAttribute="height" id="Xae-1Q-7YW">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="BUM-qD-NSz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XtP-NH-dNy"/>
+                <constraint firstAttribute="bottom" secondItem="BUM-qD-NSz" secondAttribute="bottom" id="eQR-Kw-ws2"/>
+                <constraint firstItem="xWd-wh-F0Q" firstAttribute="top" secondItem="TfU-V8-Huw" secondAttribute="bottom" id="hp3-iO-cP8"/>
+                <constraint firstItem="xWd-wh-F0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n8s-Zb-sWj"/>
+                <constraint firstItem="BUM-qD-NSz" firstAttribute="top" secondItem="xWd-wh-F0Q" secondAttribute="bottom" id="qWN-PL-Nx4"/>
+                <constraint firstAttribute="trailing" secondItem="xWd-wh-F0Q" secondAttribute="trailing" id="u8x-xb-c1e"/>
+                <constraint firstItem="xWd-wh-F0Q" firstAttribute="top" secondItem="TfU-V8-Huw" secondAttribute="bottom" id="y3j-B1-9zV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="TfU-V8-Huw"/>
+                    <exclude reference="xWd-wh-F0Q"/>
+                    <exclude reference="BUM-qD-NSz"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="MCs-Xa-wxV"/>
+                    <exclude reference="Tdx-PU-a8x"/>
+                    <exclude reference="UXU-CU-ZIc"/>
+                    <exclude reference="4Xp-7h-NK2"/>
+                    <exclude reference="BX8-0N-Srj"/>
+                    <exclude reference="JxA-a4-u9Z"/>
+                    <exclude reference="Xae-1Q-7YW"/>
+                    <exclude reference="XtP-NH-dNy"/>
+                    <exclude reference="eQR-Kw-ws2"/>
+                    <exclude reference="qWN-PL-Nx4"/>
+                    <exclude reference="BrB-Vd-fQm"/>
+                    <exclude reference="Mll-hq-wQn"/>
+                    <exclude reference="hp3-iO-cP8"/>
+                    <exclude reference="n8s-Zb-sWj"/>
+                    <exclude reference="u8x-xb-c1e"/>
+                    <exclude reference="y3j-B1-9zV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="TfU-V8-Huw"/>
+                    <include reference="xWd-wh-F0Q"/>
+                    <include reference="BUM-qD-NSz"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="MCs-Xa-wxV"/>
+                    <include reference="Tdx-PU-a8x"/>
+                    <include reference="UXU-CU-ZIc"/>
+                    <include reference="4Xp-7h-NK2"/>
+                    <exclude reference="BX8-0N-Srj"/>
+                    <include reference="JxA-a4-u9Z"/>
+                    <exclude reference="Xae-1Q-7YW"/>
+                    <include reference="XtP-NH-dNy"/>
+                    <include reference="eQR-Kw-ws2"/>
+                    <exclude reference="qWN-PL-Nx4"/>
+                    <exclude reference="BrB-Vd-fQm"/>
+                    <include reference="Mll-hq-wQn"/>
+                    <include reference="hp3-iO-cP8"/>
+                    <exclude reference="n8s-Zb-sWj"/>
+                    <include reference="u8x-xb-c1e"/>
+                    <exclude reference="y3j-B1-9zV"/>
+                </mask>
+            </variation>
+        </view>
+        <searchDisplayController id="vgx-Vl-m0g">
+            <connections>
+                <outlet property="delegate" destination="-1" id="liu-bg-Uh5"/>
+                <outlet property="searchBar" destination="TfU-V8-Huw" id="IQH-Kc-M2Z"/>
+                <outlet property="searchContentsController" destination="-1" id="lSa-vV-pAl"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="OvO-ru-ADW"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="CED-eW-sYD"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoShopViewController">
+            <connections>
+                <outlet property="companyAutoView" destination="Etf-fe-34x" id="XcF-rm-QGM"/>
+                <outlet property="companyBusinessPhoto" destination="hCl-Ap-xru" id="txy-zq-KSD"/>
+                <outlet property="companyUserFrontPhoto" destination="r0H-yb-1Zc" id="5DS-ON-HV6"/>
+                <outlet property="companyUserReversePhoto" destination="pIG-pt-1A9" id="Dwd-2b-PDh"/>
+                <outlet property="segmentChoose" destination="Sks-ch-Lju" id="7cj-kv-RzQ"/>
+                <outlet property="userAutoPhoto" destination="RCd-jf-sGJ" id="15k-fl-Eaf"/>
+                <outlet property="userAutoView" destination="CbP-4i-b3M" id="RZ2-gL-eDc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbP-4i-b3M">
+                    <rect key="frame" x="0.0" y="92" width="320" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请使用个人身份证进行认证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM2-e1-JzE">
+                            <rect key="frame" x="0.0" y="10" width="320" height="22.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="EM2-e1-JzE" secondAttribute="height" multiplier="296:21" id="dBV-6r-mug"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-jf-sGJ">
+                            <rect key="frame" x="67" y="67" width="186" height="186"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RCd-jf-sGJ" secondAttribute="height" multiplier="1:1" id="zg9-W3-fai"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="autoTm">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81384341930000004" green="0.81384341930000004" blue="0.81384341930000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="RCd-jf-sGJ" secondAttribute="centerX" id="Hsu-ib-Hss"/>
+                        <constraint firstAttribute="centerY" secondItem="RCd-jf-sGJ" secondAttribute="centerY" id="KIe-ZZ-uCk"/>
+                        <constraint firstAttribute="trailing" secondItem="EM2-e1-JzE" secondAttribute="trailing" id="V3x-5b-rdu"/>
+                        <constraint firstItem="EM2-e1-JzE" firstAttribute="top" secondItem="CbP-4i-b3M" secondAttribute="top" constant="10" id="XhF-bF-HFJ"/>
+                        <constraint firstItem="RCd-jf-sGJ" firstAttribute="leading" secondItem="CbP-4i-b3M" secondAttribute="leading" constant="67" id="oWD-EV-hWp"/>
+                        <constraint firstAttribute="trailing" secondItem="RCd-jf-sGJ" secondAttribute="trailing" constant="67" id="oc3-yJ-8qL"/>
+                        <constraint firstItem="EM2-e1-JzE" firstAttribute="leading" secondItem="CbP-4i-b3M" secondAttribute="leading" id="smk-8D-gEl"/>
+                        <constraint firstAttribute="width" secondItem="CbP-4i-b3M" secondAttribute="height" multiplier="1:1" id="vfZ-71-Enh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etf-fe-34x">
+                    <rect key="frame" x="0.0" y="92" width="320" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="需提供营业执照、负责人的身份证的照片" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltN-w0-cgB">
+                            <rect key="frame" x="0.0" y="8" width="320" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ltN-w0-cgB" secondAttribute="height" multiplier="376:40" id="sV4-jA-12G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCl-Ap-xru">
+                            <rect key="frame" x="70" y="57" width="176" height="109"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hCl-Ap-xru" secondAttribute="height" multiplier="1:0.618" id="iwY-yu-EAU"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="autonConmpny">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0H-yb-1Zc">
+                            <rect key="frame" x="22" y="198" width="124" height="76.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="r0H-yb-1Zc" secondAttribute="height" multiplier="1:0.618" id="c2j-DQ-7zd"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="autoUser">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIG-pt-1A9">
+                            <rect key="frame" x="184" y="198" width="124" height="76.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pIG-pt-1A9" secondAttribute="height" multiplier="1:0.618" id="29J-lM-KO1"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="autoUserDow">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81384341930000004" green="0.81384341930000004" blue="0.81384341930000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="r0H-yb-1Zc" firstAttribute="top" secondItem="hCl-Ap-xru" secondAttribute="bottom" constant="32" id="KCY-fn-o2D"/>
+                        <constraint firstItem="pIG-pt-1A9" firstAttribute="leading" secondItem="r0H-yb-1Zc" secondAttribute="trailing" constant="38" id="Ods-WA-LFg"/>
+                        <constraint firstItem="pIG-pt-1A9" firstAttribute="top" secondItem="hCl-Ap-xru" secondAttribute="bottom" constant="32" id="Oy7-w1-3Hz"/>
+                        <constraint firstItem="hCl-Ap-xru" firstAttribute="top" secondItem="ltN-w0-cgB" secondAttribute="bottom" constant="15" id="Q58-AY-SxH"/>
+                        <constraint firstItem="hCl-Ap-xru" firstAttribute="leading" secondItem="Etf-fe-34x" secondAttribute="leading" constant="70" id="RFs-kO-q8d"/>
+                        <constraint firstAttribute="trailing" secondItem="hCl-Ap-xru" secondAttribute="trailing" constant="74" id="UEj-As-Gg0"/>
+                        <constraint firstAttribute="width" secondItem="Etf-fe-34x" secondAttribute="height" multiplier="1:1" id="d3n-iA-Zod"/>
+                        <constraint firstAttribute="trailing" secondItem="pIG-pt-1A9" secondAttribute="trailing" constant="12" id="fai-D6-EIi"/>
+                        <constraint firstItem="r0H-yb-1Zc" firstAttribute="leading" secondItem="Etf-fe-34x" secondAttribute="leading" constant="22" id="fsn-Hz-1qA"/>
+                        <constraint firstItem="ltN-w0-cgB" firstAttribute="top" secondItem="Etf-fe-34x" secondAttribute="top" constant="8" id="ltH-yI-9C5"/>
+                        <constraint firstItem="r0H-yb-1Zc" firstAttribute="width" secondItem="pIG-pt-1A9" secondAttribute="width" id="q17-UI-Qua"/>
+                        <constraint firstAttribute="trailing" secondItem="ltN-w0-cgB" secondAttribute="trailing" id="uO6-Af-GsV"/>
+                        <constraint firstItem="ltN-w0-cgB" firstAttribute="leading" secondItem="Etf-fe-34x" secondAttribute="leading" id="w1H-gm-UDD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak5-Mu-7b9" customClass="CornerRadiusButton">
+                    <rect key="frame" x="50" y="420" width="206" height="31.5"/>
+                    <color key="backgroundColor" red="0.83137254901960789" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ak5-Mu-7b9" secondAttribute="height" multiplier="143:22" id="p8L-ls-h1E"/>
+                    </constraints>
+                    <state key="normal" title="提交审核">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitPhoto:" destination="-1" eventType="touchUpInside" id="0YP-ea-rMW"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czR-Bn-uSo">
+                    <rect key="frame" x="8" y="0.0" width="304" height="84"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sks-ch-Lju">
+                            <rect key="frame" x="52" y="29" width="200" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Sks-ch-Lju" secondAttribute="height" multiplier="271:35" id="kyi-Tz-TeB"/>
+                            </constraints>
+                            <segments>
+                                <segment title="企业认证"/>
+                                <segment title="个人认证"/>
+                            </segments>
+                            <color key="tintColor" red="0.26492228835978837" green="0.26492228835978837" blue="0.26492228835978837" alpha="1" colorSpace="calibratedRGB"/>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Sks-ch-Lju" secondAttribute="trailing" constant="52" id="Fkf-gw-Aut"/>
+                        <constraint firstItem="Sks-ch-Lju" firstAttribute="leading" secondItem="czR-Bn-uSo" secondAttribute="leading" constant="52" id="gU7-Lc-bPN"/>
+                        <constraint firstAttribute="centerY" secondItem="Sks-ch-Lju" secondAttribute="centerY" id="rHJ-Kh-9As"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="CbP-4i-b3M" secondAttribute="centerY" id="75o-ii-vD3"/>
+                <constraint firstAttribute="trailing" secondItem="CbP-4i-b3M" secondAttribute="trailing" id="7IP-xF-SK7"/>
+                <constraint firstItem="Ak5-Mu-7b9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="8tX-x4-Tsb"/>
+                <constraint firstItem="CbP-4i-b3M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R5h-x5-vZY"/>
+                <constraint firstItem="czR-Bn-uSo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TeW-cj-D9g"/>
+                <constraint firstItem="Etf-fe-34x" firstAttribute="top" secondItem="czR-Bn-uSo" secondAttribute="bottom" constant="8" id="Tm0-4v-qWJ"/>
+                <constraint firstAttribute="centerY" secondItem="Etf-fe-34x" secondAttribute="centerY" id="YFW-F9-HGO"/>
+                <constraint firstAttribute="trailing" secondItem="Ak5-Mu-7b9" secondAttribute="trailing" constant="64" id="aBR-bR-Y83"/>
+                <constraint firstAttribute="trailing" secondItem="czR-Bn-uSo" secondAttribute="trailing" constant="8" id="da9-5J-T80"/>
+                <constraint firstItem="czR-Bn-uSo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="eu6-Qj-wB9"/>
+                <constraint firstAttribute="trailing" secondItem="Etf-fe-34x" secondAttribute="trailing" id="f0Q-8L-9Ms"/>
+                <constraint firstItem="Ak5-Mu-7b9" firstAttribute="top" secondItem="Etf-fe-34x" secondAttribute="bottom" constant="8" id="ffl-zZ-ZfR"/>
+                <constraint firstItem="Etf-fe-34x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lvc-lJ-kpe"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="231" y="191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="autoTm" width="497" height="361"/>
+        <image name="autoUser" width="338" height="216"/>
+        <image name="autoUserDow" width="339" height="212"/>
+        <image name="autonConmpny" width="557" height="403"/>
+    </resources>
+</document>

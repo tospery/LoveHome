@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHProfileViewController">
+            <connections>
+                <outlet property="tableView" destination="seM-c9-lwv" id="htm-nf-6WS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="seM-c9-lwv">
+                    <rect key="frame" x="0.0" y="12" width="320" height="198"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="198" id="Iyi-PB-jp9"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rdy-Jx-fT5"/>
+                        <outlet property="delegate" destination="-1" id="izu-Hf-RxM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="seM-c9-lwv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="1cX-Bh-8bQ"/>
+                <constraint firstItem="seM-c9-lwv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fns-Qi-tvA"/>
+                <constraint firstAttribute="trailing" secondItem="seM-c9-lwv" secondAttribute="trailing" id="g5f-gu-T0H"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="233" y="312"/>
+        </view>
+    </objects>
+</document>

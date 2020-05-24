@@ -1,0 +1,65 @@
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+// 开源库
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "IQKeyboardManager.h"
+#import "CocoaLumberjack.h"
+#import "UIView+Toast.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "Masonry.h"
+#import "MJExtension.h"
+#import <BaiduMapAPI/BMapKit.h>
+#import <BaiduMapAPI/BMKMapView.h>
+#import "DDXML.h"
+#import "APService.h"
+#import "KxMenu.h"
+#import "POP.h"
+#import "UMSocial.h"
+#import "HMSegmentedControl.h"
+#import "NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
+#import <AlipaySDK/AlipaySDK.h>
+#import "SWTableViewCell.h"
+#import "MYBlurIntroductionView.h"
+#import "MobClick.h"
+#import "JPEngine.h"
+#import "JXApple.h"
+
+
+// 常用类
+#import "NSManagedObject+LoveHome.h"
+#import "LHSpecify.h"
+#import "LHTool.h"
+#import "LHConst.h"
+#import "LHString.h"
+#import "LHType.h"
+#import "LHUtil.h"
+#import "LHGlobal.h"
+#import "LHBaseViewController.h"
+#import "LHNavigationController.h"
+#import "LHLoginViewController.h"
+#import "UIView+Common.h"
+#import "LJHTextSizeTool.h"
+#import "LHHTTPClient.h"
+#import "LHOrder.h"
+
+// 全局变量
+extern LHGlobal *gLH;
+#endif
